@@ -1,0 +1,53 @@
+<% include partes/_header %>
+    <br>
+    <div class="horizontal">
+        <div class="vertical">
+            <div class="row mt-5">
+                <img src="https://cdni.rt.com/actualidad/public_images/2017.01/article/588d82ccc46188be6d8b4576.jpg?v=2" alt="los Arboles" width="800" height="375">
+            </div>            
+        </div>
+    </div>
+    <br>
+    <center>
+        <form action="/registrar" method="post">
+            <button type="submit" class="btn btn-primary">
+                REGISTRAR
+            </button>
+        </form>
+    </center>
+
+    
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-7">
+                <h2>    Lista de Arboles de Tingo María</h2>
+                <br>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>codigo</th>
+                            <th>altura</th>
+                            <th>tipo</th>
+                            <th>longitud</th>
+                            <th>latitud</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if(data) { %>
+                            <% for(var i=0; i< data.length; i++) { %>
+                                <tr>
+                                    <td><%= data[i].codigo %></td>
+                                    <td><%= data[i].altura %></td>
+                                    <td><%= data[i].tipo %></td>
+                                    <td><%= data[i].longitud %></td>
+                                    <td><%= data[i].latitud %></td>
+                                    <a href="/add/<%= data[i].codigo %>" class="btn btn-danger">Editar</a>
+                                </tr>
+                            <% } %> 
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>    
+<% include partes/_final %>
