@@ -6,7 +6,7 @@ controller.list = (req, res) => {
      if (err) {
       res.json(err);
      }
-     res.render('arbol', {
+     res.render('ListarRegistro', {
         data: arbol
      });
     });
