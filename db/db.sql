@@ -1,0 +1,1 @@
+CREATE TABLE `examen`.`arbol` ( `codigo` INT(8) NOT NULL , `altura` INT(8) NOT NULL , `tipo` VARCHAR(30) NOT NULL , `longitud` INT(8) NOT NULL , `latitud` INT(8) NOT NULL ) ENGINE = InnoDB;
