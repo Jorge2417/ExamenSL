@@ -13,7 +13,7 @@ controller.list = (req, res) => {
   });
 };
 controller.registrar = (req,res) =>{
-    res.render('registrar')
+    res.render('RegistroArbol')
 }
 
 controller.save = (req, res) => {
