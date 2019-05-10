@@ -24,6 +24,8 @@ app.use(myConnection(mysql, {
   //apruebame
 app.use(express.urlencoded({extended: false}));
 
+app.use(holaaa);
+app .metodo();
 // routes
 app.use('/', arbolRoutes);
 
