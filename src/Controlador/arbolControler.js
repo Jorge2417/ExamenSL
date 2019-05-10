@@ -12,6 +12,9 @@ controller.list = (req, res) => {
     });
   });
 };
+controller.registrar = (req,res) =>{
+    res.render('registrar')
+}
 
 controller.save = (req, res) => {
   const data = req.body;
