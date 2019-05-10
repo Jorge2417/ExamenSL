@@ -20,6 +20,8 @@ app.use(myConnection(mysql, {
     port: 3306,
     database: 'examen'
   }, 'single'));
+ // hola profe
+  //apruebame
 app.use(express.urlencoded({extended: false}));
 
 // routes
@@ -29,5 +31,5 @@ app.listen(app.get('port'), () => {
 console.log(`server on port ${app.get('port')}`);
 });
 
-// Marco y Crislyn xd xd !!!!! 
+// Marco xd xd !!!!! 
 // coco es rata :p 
